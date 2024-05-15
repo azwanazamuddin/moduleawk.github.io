@@ -761,10 +761,10 @@ other words, it has some time-dependent structure and does not have
 constant variance over time.</p>
 <p><strong>H<sub>A</sub>:</strong> The time series is stationary.</p>
 <p>Dari p-value yang benilai 0.01 (&lt;0.05) maka hipotesa alternatif
-diterima. <strong>Data memiliki sifat stationary.</strong> Hal ini
-menunjukkan bahwa komponen trend pada data time series ini tidak
-signifikan meskipun pada dekomposisi sebelumnya terlihat beberapa
-kecenderungan.</p>
+diterima. Data memiliki sifat stationary<strong>.</strong> Hal ini
+menunjukkan bahwa <strong>komponen trend pada data time series ini tidak
+signifikan</strong> meskipun pada dekomposisi sebelumnya terlihat
+beberapa kecenderungan.</p>
 <p><strong>Uji Korelogram &amp; Box-Pierce’s Autocorrelation/Ljung-Box
 Test</strong></p>
 <p>Untuk menguji seasonality pada data, kita bisa menggunakan
@@ -999,9 +999,10 @@ naif.</p></li>
 <p>Berdasarkan hasil ini, dapat disimpulkan bahwa baik model SMA maupun
 DMA tidak cukup baik dalam meramalkan data yang digunakan. Hal ini
 sangat berkaitan dengan asumsi pada pendekatan moving average yang
-<strong>bersifat stasioner-linier sedangkan data yang dimiliki
-sebelumnya telah diketahui bersifat non-stasioner dan memiliki komponen
-pola data seasonal.</strong></p>
+<strong>bersifat stasioner-linier.</strong> Data yang kita miliki
+meskipun memiliki sifat stasioner dan tidak memiliki komponen trend
+(dari hasil Dickey-Fuller test), masih cenderung mempunyai komponen
+seasonal yang cukup berpengaruh.</p>
 <p>Dengan sifatnya yang stasioner-linier, hasil moving average ini biasa
 direpresentasikan dalam bentuk formula linear. Formula linear ini bisa
 didapatkan dengan analisis regresi linear pada R (<code>lm()</code>)</p>
